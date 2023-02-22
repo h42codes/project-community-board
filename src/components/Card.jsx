@@ -1,5 +1,10 @@
 import "./Card.css";
 
+const handleClick = (e) => {
+  e.preventDefault();
+  window.open(e.target.value, "_blank");
+};
+
 const Card = ({ game }) => {
   return (
     <div className="Card">
@@ -15,7 +20,9 @@ const Card = ({ game }) => {
         <div className="stadium">{game.stadium}</div>
         <div className="location">{game.location}</div>
       </div>
-      <button className="Card__button">Preview</button>
+      <button className="Card__button" value={game.url} onClick={handleClick}>
+        Preview
+      </button>
     </div>
   );
 };
