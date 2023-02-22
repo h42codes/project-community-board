@@ -1,14 +1,15 @@
 import "./App.css";
 import Board from "./components/Board";
 
-const gameData = [
+const gameList = [
   {
     id: 0,
     player1: "Cuba",
     player2: "Netherlands",
     date: "March 7, 2023",
     time: "11:00 PM ET",
-    location: "Taichung Intercontinental Baseball Stadium (Taichung, Taiwan)",
+    stadium: "Taichung Intercontinental Baseball Stadium",
+    location: "Taichung, Taiwan",
   },
   {
     id: 1,
@@ -16,7 +17,8 @@ const gameData = [
     player2: "Korea",
     date: "March 8, 2023",
     time: "10:00 PM ET",
-    location: "Tokyo Dome (Tokyo, Japan)",
+    stadium: "Tokyo Dome",
+    location: "Tokyo, Japan",
   },
   {
     id: 2,
@@ -24,7 +26,8 @@ const gameData = [
     player2: "Cardinals",
     date: "March 9, 2023",
     time: "1:05 PM ET",
-    location: "Roger Dean Chevrolet Stadium (Jupiter, FL)",
+    stadium: "Roger Dean Chevrolet Stadium",
+    location: "Jupiter, FL",
   },
   {
     id: 3,
@@ -32,7 +35,8 @@ const gameData = [
     player2: "Red Sox",
     date: "March 8, 2023",
     time: "6:05 PM ET",
-    location: "JetBlue Park (Ft. Myers, FL)",
+    stadium: "JetBlue Park",
+    location: "Ft. Myers, FL",
   },
   {
     id: 4,
@@ -40,7 +44,8 @@ const gameData = [
     player2: "Giants",
     date: "March 8, 2023",
     time: "9:05 PM ET",
-    location: "Scottsdale Stadium (Scottsdale, AZ)",
+    stadium: "Scottsdale Stadium",
+    location: "Scottsdale, AZ",
   },
   {
     id: 5,
@@ -48,7 +53,8 @@ const gameData = [
     player2: "Angels",
     date: "March 9, 2023",
     time: "3:10 PM ET",
-    location: "Tempe Diablo Stadium (Tempe, AZ)",
+    stadium: "Tempe Diablo Stadium",
+    location: "Tempe, AZ",
   },
   {
     id: 6,
@@ -56,7 +62,8 @@ const gameData = [
     player2: "Venezuela",
     date: "March 11, 2023",
     time: "7:00 PM ET",
-    location: "loanDepot park (Miami, FL)",
+    stadium: "loanDepot park",
+    location: "Miami, FL",
   },
   {
     id: 7,
@@ -64,7 +71,8 @@ const gameData = [
     player2: "Canada",
     date: "March 12, 2023",
     time: "3:00 PM ET",
-    location: "Chase Field (Phoenix, AZ)",
+    stadium: "Chase Field",
+    location: "Phoenix, AZ",
   },
   {
     id: 8,
@@ -72,7 +80,8 @@ const gameData = [
     player2: "United States",
     date: "March 13, 2023",
     time: "10:00 PM ET",
-    location: "Chase Field (Phoenix, AZ)",
+    stadium: "Chase Field",
+    location: "Phoenix, AZ",
   },
   {
     id: 9,
@@ -80,7 +89,8 @@ const gameData = [
     player2: "Dominican Rep.",
     date: "March 15, 2023",
     time: "7:00 PM ET",
-    location: "loanDepot park (Miami, FL)",
+    stadium: "loanDepot park",
+    location: "Miami, FL",
   },
   {
     id: 10,
@@ -88,15 +98,15 @@ const gameData = [
     player2: "Colombia",
     date: "March 15, 2023",
     time: "10:00 PM ET",
-    location: "Chase Field (Phoenix, AZ)",
+    stadium: "Chase Field",
+    location: "Phoenix, AZ",
   },
 ];
-
 function App() {
   return (
     <div className="App">
       <h1>World Baseball Classic</h1>
-      <Board />
+      <Board gameList={gameList} />
     </div>
   );
 }
