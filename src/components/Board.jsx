@@ -1,23 +1,12 @@
 import "./Board.css";
 import Card from "./Card";
 
-const Board = () => {
+const Board = ({ gameList }) => {
   return (
     <div className="Board">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {gameList.map((game) => (
+        <Card key={game.id} game={game} />
+      ))}
     </div>
   );
 };
