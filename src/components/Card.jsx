@@ -12,7 +12,7 @@ const Card = ({ game }) => {
       <div className="Card__content">
         <div className="time">{game.time}</div>
         <hr />
-        <div>{game.stadium}</div>
+        <div className="stadium">{game.stadium}</div>
         <div className="location">{game.location}</div>
       </div>
       <button className="Card__button">Preview</button>

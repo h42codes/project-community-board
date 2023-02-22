@@ -9,14 +9,21 @@
   justify-content: space-between;
 }
 
+.Card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 .Card__date {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
 .Card__title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
+  /* make font bolder */
+  line-height: 1.2;
   margin-bottom: 10px;
 }
 
@@ -32,8 +39,10 @@
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   transition: background-color 0.3s ease;
+  width: 45%;
+  margin: 0 auto;
 }
 
 .Card__button:hover {
@@ -42,6 +51,10 @@
 }
 
 .time {
+  font-size: 16px;
+}
+
+.stadium {
   font-size: 14px;
 }
 .location {
