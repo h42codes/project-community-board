@@ -10,6 +10,7 @@ const gameList = [
     time: "11:00 PM ET",
     stadium: "Taichung Intercontinental Baseball Stadium",
     location: "Taichung, Taiwan",
+    url: "https://www.mlb.com/gameday/cuba-vs-netherlands/2023/03/07/719542/preview",
   },
   {
     id: 1,
@@ -19,6 +20,7 @@ const gameList = [
     time: "10:00 PM ET",
     stadium: "Tokyo Dome",
     location: "Tokyo, Japan",
+    url: "https://www.mlb.com/gameday/australia-vs-korea/2023/03/08/719530/preview",
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ const gameList = [
     time: "1:05 PM ET",
     stadium: "Roger Dean Chevrolet Stadium",
     location: "Jupiter, FL",
+    url: "https://www.mlb.com/gameday/nicaragua-vs-cardinals/2023/03/09/719204/preview",
   },
   {
     id: 3,
@@ -37,6 +40,7 @@ const gameList = [
     time: "6:05 PM ET",
     stadium: "JetBlue Park",
     location: "Ft. Myers, FL",
+    url: "https://www.mlb.com/gameday/puerto-rico-vs-red-sox/2023/03/08/719223/preview",
   },
   {
     id: 4,
@@ -46,6 +50,7 @@ const gameList = [
     time: "9:05 PM ET",
     stadium: "Scottsdale Stadium",
     location: "Scottsdale, AZ",
+    url: "https://www.mlb.com/gameday/united-states-vs-giants/2023/03/08/719208/preview",
   },
   {
     id: 5,
@@ -55,6 +60,7 @@ const gameList = [
     time: "3:10 PM ET",
     stadium: "Tempe Diablo Stadium",
     location: "Tempe, AZ",
+    url: "https://www.mlb.com/gameday/united-states-vs-angels/2023/03/09/719195/preview",
   },
   {
     id: 6,
@@ -64,6 +70,7 @@ const gameList = [
     time: "7:00 PM ET",
     stadium: "loanDepot park",
     location: "Miami, FL",
+    url: "https://www.mlb.com/gameday/dominican-rep-vs-venezuela/2023/03/11/719514/preview",
   },
   {
     id: 7,
@@ -73,6 +80,7 @@ const gameList = [
     time: "3:00 PM ET",
     stadium: "Chase Field",
     location: "Phoenix, AZ",
+    url: "https://www.mlb.com/gameday/great-britain-vs-canada/2023/03/12/719517/preview",
   },
   {
     id: 8,
@@ -82,6 +90,7 @@ const gameList = [
     time: "10:00 PM ET",
     stadium: "Chase Field",
     location: "Phoenix, AZ",
+    url: "https://www.mlb.com/gameday/canada-vs-united-states/2023/03/13/719520/preview",
   },
   {
     id: 9,
@@ -91,6 +100,7 @@ const gameList = [
     time: "7:00 PM ET",
     stadium: "loanDepot park",
     location: "Miami, FL",
+    url: "https://www.mlb.com/gameday/puerto-rico-vs-dominican-rep/2023/03/15/719506/preview",
   },
   {
     id: 10,
@@ -100,6 +110,7 @@ const gameList = [
     time: "10:00 PM ET",
     stadium: "Chase Field",
     location: "Phoenix, AZ",
+    url: "https://www.mlb.com/gameday/united-states-vs-colombia/2023/03/15/719515/preview",
   },
 ];
 function App() {
