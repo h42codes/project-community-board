@@ -17,7 +17,7 @@ const Card = ({ game }) => {
       <div className="Card__content">
         <div className="time">{game.time}</div>
         <hr />
-        <div className="stadium">{game.stadium}</div>
+        <div className="stadium">🏟 {game.stadium}</div>
         <div className="location">{game.location}</div>
       </div>
       <button className="Card__button" value={game.url} onClick={handleClick}>

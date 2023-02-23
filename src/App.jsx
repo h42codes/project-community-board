@@ -116,7 +116,7 @@ const gameList = [
 function App() {
   return (
     <div className="App">
-      <h1>World Baseball Classic</h1>
+      <h1>⚾️ World Baseball Classic ⚾️</h1>
       <Board gameList={gameList} />
     </div>
   );
