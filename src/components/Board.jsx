@@ -10,12 +10,11 @@ const Board = ({ gameList }) => {
     setSearchInput(e.target.value);
   };
 
-  let filteredGames = gameList.filter((game) => {
-    return (
+  let filteredGames = gameList.filter(
+    (game) =>
       game.player1.toLowerCase().includes(searchInput.toLowerCase()) ||
       game.player2.toLowerCase().includes(searchInput.toLowerCase())
-    );
-  });
+  );
 
   filteredGames = searchInput ? filteredGames : gameList;
 
