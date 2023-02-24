@@ -1,0 +1,22 @@
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBar input {
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .SearchBar input {
+    width: 200px;
+  }
+}
